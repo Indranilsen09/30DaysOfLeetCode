@@ -24,21 +24,35 @@ public class LeetCode13
 
         for(int i=0; i< s.length();i++)
         {
-            if(s.charAt(i)=='C' && i+1<s.length()&&  s.charAt(i+1)=='M')
-            {
-                value = ht.get("CM");
-                i++;
-
-            } else if(s.charAt(i)=='X' &&i+1<s.length() && s.charAt(i+1)=='C'){
-                value = ht.get("XC");
-                i++;
-
-            }
-             else if(s.charAt(i)=='I' && i+1<s.length()&&  s.charAt(i+1)=='V')
+            if(s.charAt(i)=='I' && i+1<s.length()&&  s.charAt(i+1)=='V')
             {
                  value = ht.get("IV");
                  i++;
-
+            }
+            else if(s.charAt(i)=='I' && i+1<s.length()&&  s.charAt(i+1)=='X')
+            {
+                value = ht.get("IX");
+                i++;
+            }
+            else if(s.charAt(i)=='X' && i+1<s.length()&&  s.charAt(i+1)=='C')
+            {
+                value = ht.get("XC");
+                i++;
+            }
+            else if(s.charAt(i)=='X' && i+1<s.length()&&  s.charAt(i+1)=='L')
+            {
+                value = ht.get("XL");
+                i++;
+            }
+            else if(s.charAt(i)=='C' && i+1<s.length()&&  s.charAt(i+1)=='D')
+            {
+                value = ht.get("CD");
+                i++;
+            }
+            else if(s.charAt(i)=='C' && i+1<s.length()&&  s.charAt(i+1)=='M')
+            {
+                value = ht.get("CM");
+                i++;
             }
             else {
                value  = ht.get(String.valueOf(s.charAt(i)));
