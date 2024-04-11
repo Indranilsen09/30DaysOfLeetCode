@@ -24,7 +24,7 @@ public class LeetCode402
         {
             int temp = Character.getNumericValue(num.charAt(i));
 
-            while(st.size()>0 && st.peek()>temp && k>0)
+            while   (st.size()>0 && st.peek()>temp && k>0)
             {
                 st.pop();k--;
             }
